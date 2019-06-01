@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="开发环境"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"/>
+    <com.yang.flowlayoutlibrary.FlowLayout
+        android:id="@+id/fl_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:backgroundResource="@drawable/shape_tag_grey_with_border"
+        app:horizontalSpacing="15dp"
+        app:itemColor="@color/black"
+        app:itemSize="15sp"
+        app:textPaddingH="5dp"
+        app:textPaddingV="5dp"
+        app:verticalSpacing="5dp" />
+</LinearLayout>
+</android.support.v7.widget.CardView>
